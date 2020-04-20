@@ -1,0 +1,13 @@
+ul {
+    list-style: none;
+}
+
+.multiplication-table {
+    border-collapse: collapse;
+    margin: 0 auto;
+    margin-top: 10%;
+}
+
+.multiplication-table td {
+    padding: 20px;
+}
