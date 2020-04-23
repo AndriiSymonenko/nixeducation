@@ -12,52 +12,72 @@ for ($firstNumber = 1; $firstNumber <= 10; $firstNumber++) {
 
 
 //                temporary crutches
-
+                $test = " " . "X" . " ";
                 if ($firstNumber == 1) {
-                    $color = "<span class = 'red'>";
+                   echo "<span class = 'red'>$firstNumber</span>" . $test;
                 }
                 elseif ($firstNumber == 2) {
-                    $color = "<span class = 'green'>";
+                    echo "<span class = 'green'>$firstNumber</span>" . $test;
                 }
                 elseif ($firstNumber == 3) {
-                    $color = "<span class = 'yellow'>";
+                    echo "<span class = 'yellow'>$firstNumber</span>" . $test;
                 }
                 elseif ($firstNumber == 4) {
-                    $color = "<span class = 'blue'>";
+                    echo "<span class = 'blue'>$firstNumber</span>" . " " . "X" . " ";
+                } elseif ($firstNumber ==  10) {
+                    $firstNumber = strval($firstNumber);
+                    echo "<span class='red'>$firstNumber[0]</span>" . "$firstNumber[1]" . " " . "X" . " ";
+
+                } else {
+                    echo "<span>$firstNumber</span>" . " " . "X" . " ";
                 }
-                else {
-                    $color = $color = "<span>";
-                }
+
+
 
                 if ($secondNumber == 1) {
-                    $colorSecond = "<span class = 'red'>";
+                    echo "<span class = 'red'>$secondNumber</span>" . " " . "=" . " ";
                 }
                 elseif ($secondNumber == 2) {
-                    $colorSecond = "<span class = 'green'>";
+                    echo "<span class = 'green'>$secondNumber</span>" . " " . "=" . " ";
                 }
                 elseif ($secondNumber == 3) {
-                    $colorSecond = "<span class = 'yellow'>";
+                    echo "<span class = 'yellow'>$secondNumber</span>" . " " . "=" . " ";
                 }
                 elseif ($secondNumber == 4) {
-                    $colorSecond = "<span class = 'blue'>";
+                    echo "<span class = 'blue'>$secondNumber</span>" . " " . "=" . " ";
+                } elseif ($secondNumber ==  10) {
+                    $secondNumber = strval($secondNumber);
+                    echo "<span class='red'>$secondNumber[0]</span>" . "$secondNumber[1]" . " " . "=" . " ";
                 }
                 else {
-                    $colorSecond = "<span>";
+                    echo "<span>$secondNumber</span>" . " " . "=" . " ";
                 }
+
 
                 $mulNumber = $firstNumber * $secondNumber;
-                $mulNumber = "$mulNumber";
-                if ($mulNumber[0] == 1) {
-                    $mulColor = "<span class = 'blue'>";
+
+                $mulNumber = str_split($mulNumber);
+                for ($i = 0; $i < count($mulNumber); $i++) {
+                    if ($mulNumber[$i] == 1) {
+                        echo "<span class='red'>$mulNumber[$i]</span>";
+                    }
+                    elseif ($mulNumber[$i] == 2) {
+                        echo  "<span class='green'>$mulNumber[$i]</span>";
+                    }
+                    elseif ($mulNumber[$i] == 3) {
+                        echo  "<span class='yellow'>$mulNumber[$i]</span>";
+                    }
+                    elseif ($mulNumber[$i] == 4) {
+                        echo  "<span class='blue'>$mulNumber[$i]</span>";
+                    }
+                    else {
+                        echo $mulNumber[$i];
+                    }
                 }
-                else {
-                    $mulColor = "<span>";
-                }
+                echo "<br>";
 
-//                temporary crutches
+                //                temporary crutches
 
-
-                echo "$color $firstNumber</span>". "X" . "$colorSecond $secondNumber</span>" . " " . "=" .  " " . "$mulColor $mulNumber</span>" . "<br>";
             }
             echo "</td>";
             $firstNumber++;
