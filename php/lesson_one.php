@@ -1,6 +1,8 @@
 
-<?php
 
+
+<?php
+echo "<title>Урок 1</title>";
 // with while
 //$i = 1;
 //echo "<table border = \"1\">\n";
@@ -30,7 +32,7 @@
 //echo "</table>";
 //whith for
 
-echo "<link rel='stylesheet' href='style.css'>";
+echo "<link rel='stylesheet' href='../css/style.css'>";
 
 echo "<table class='multiplication-table' border = \"1\">\n";
 for ($firstNumber = 1; $firstNumber <= 10; $firstNumber++) {

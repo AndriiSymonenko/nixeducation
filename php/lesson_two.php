@@ -1,6 +1,8 @@
-<?php
 
-echo "<link rel='stylesheet' href='style.css'>";
+
+<?php
+echo "<title>Урок 2</title>";
+echo "<link rel='stylesheet' href='../css/style.css'>";
 
 echo "<table class='multiplication-table' border = \"1\">\n";
 for ($firstNumber = 1; $firstNumber <= 10; $firstNumber++) {
@@ -23,10 +25,10 @@ for ($firstNumber = 1; $firstNumber <= 10; $firstNumber++) {
                     echo "<span class = 'yellow'>$firstNumber</span>" . $test;
                 }
                 elseif ($firstNumber == 4) {
-                    echo "<span class = 'blue'>$firstNumber</span>" . " " . "X" . " ";
+                    echo "<span class = 'blue'>$firstNumber</span>" . $test;
                 } elseif ($firstNumber ==  10) {
                     $firstNumber = strval($firstNumber);
-                    echo "<span class='red'>$firstNumber[0]</span>" . "$firstNumber[1]" . " " . "X" . " ";
+                    echo "<span class='red'>$firstNumber[0]</span>" . "$firstNumber[1]" . $test;
 
                 } else {
                     echo "<span>$firstNumber</span>" . " " . "X" . " ";

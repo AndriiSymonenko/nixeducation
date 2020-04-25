@@ -1,0 +1,154 @@
+
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/roboto-regular-webfont.woff2");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/roboto-medium-webfont.woff2");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/roboto-bold-webfont.woff2");
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* Global Style */
+
+body {
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 16px;
+}
+
+
+.navigation-list {
+    list-style: none;
+    display: flex;
+}
+
+.navigation-list__item {
+    margin-right: 30px;
+}
+
+.navigation-list__item--link {
+    text-decoration: none;
+}
+
+.button {
+    background-color:#00a6eb;
+    border: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #fff;
+    padding: 10px 40px 10px 40px;
+    cursor: pointer;
+}
+
+
+/* Lesson Three */
+
+.form-container {
+    display: flex;
+    margin: 0 auto;
+    position: fixed;
+    top: 30%;
+    left: 25%;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    overflow: auto; 
+    background-color: #fff;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+
+.form-lesson {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 50%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.form-lesson fieldset {
+    border: none;
+}
+
+.form-lesson__input {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.form-lesson__button {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.form-lesson__button:hover {
+    background-color: #0070a0;
+}
+
+.form-lesson__go-index {
+    position: relative;
+    text-transform: uppercase;
+    color: #00a6eb;
+}
+
+.form-lesson__go-index::after {
+    position: absolute;
+    content: "";
+    background-color:#00a6eb;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.prev-button {
+    text-decoration: none;
+}
+
+/* For multiplication table */
+
+.multiplication-table {
+    border-collapse: collapse;
+    margin: 0 auto;
+    margin-top: 10%;
+}
+
+.multiplication-table td {
+    padding: 20px;
+}
+
+
+/* For colored  multiplication table*/
+
+.red {
+    color: red;
+}
+
+.green {
+    color: green;
+}
+
+.yellow {
+    color: #ffd800;
+}
+
+.blue {
+    color: blue;
+}
+
