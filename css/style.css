@@ -28,18 +28,42 @@ body {
     font-size: 16px;
 }
 
+.site-header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.site-header__logo {
+    width: 50px;
+}
 
 .navigation-list {
     list-style: none;
     display: flex;
+
 }
 
 .navigation-list__item {
     margin-right: 30px;
+    background-color: #00a6eb;
 }
 
 .navigation-list__item--link {
     text-decoration: none;
+    text-transform: uppercase;
+    padding: 30px 20px 30px 20px;
+    font-size: 20px;
+    color: white;
+}
+
+.site-main {
+    text-align: center;
+}
+
+.site-main__header {
+    font-size: 50px;
+    color: #00a6eb;
 }
 
 .button {
@@ -117,7 +141,28 @@ body {
     cursor: pointer;
 }
 
+.reverse-container {
+    display: flex;
+    position: fixed;
+    top: 20%;
+    left: 25%;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    overflow: auto;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.reverse-string {
+  font-size: 30px;
+  padding-left: 20px;
+}
+
 .prev-button {
+    position: absolute;
+    left: 47%;
+    top: 38%;
     text-decoration: none;
 }
 
@@ -132,6 +177,16 @@ body {
 .multiplication-table td {
     padding: 20px;
 }
+
+
+.go-index-global {
+    position: absolute;
+    text-transform: uppercase;
+    color: #3d1735;
+    bottom: 20%;
+    left: 48%;
+}
+
 
 
 /* For colored  multiplication table*/

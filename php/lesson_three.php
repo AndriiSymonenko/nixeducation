@@ -15,7 +15,12 @@ if (!empty($_POST)) {
         return $strRev;
     }
 
-    echo getStrrev($stringForm);
+    $reverseResult = getStrrev($stringForm);
+
+    echo "<div class='reverse-container'>";
+    echo "<p class='reverse-string'>$reverseResult</p>";
+    echo "</div>";
+    echo "<a class='button prev-button' href= '../lesson_three.html'>Назад</a>";
 }
 
 ?>
@@ -28,7 +33,7 @@ if (!empty($_POST)) {
 </head>
 <body>
 
-    <a class="button prev-button" href="../lesson_three.html">Назад</a>
+
 
 </form>
 </body>

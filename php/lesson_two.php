@@ -5,6 +5,7 @@ echo "<title>Урок 2</title>";
 echo "<link rel='stylesheet' href='../css/style.css'>";
 
 echo "<table class='multiplication-table' border = \"1\">\n";
+
 for ($firstNumber = 1; $firstNumber <= 10; $firstNumber++) {
     for ($tr = 1; $tr <= 2; $tr++ ) {
         echo "<tr>";
@@ -90,5 +91,6 @@ for ($firstNumber = 1; $firstNumber <= 10; $firstNumber++) {
 echo "</table>";
 
 
+echo "<a class='go-index-global' href='../index.html'>На главную</a>";
 
 ?>

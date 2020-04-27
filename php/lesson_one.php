@@ -53,6 +53,7 @@ for ($firstNumber = 1; $firstNumber <= 10; $firstNumber++) {
 echo "</table>";
 
 
+echo "<a class='go-index-global' href='../index.html'>На главную</a>";
+
 
 ?>
-
