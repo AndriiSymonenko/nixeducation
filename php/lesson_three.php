@@ -1,4 +1,9 @@
 <?php
+
+echo "<title>Урок 3</title>";
+
+echo "<link rel='stylesheet' href='../css/style.css'>";
+
 error_reporting(-1);
 if (!empty($_POST)) {
 
@@ -24,18 +29,5 @@ if (!empty($_POST)) {
 }
 
 ?>
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <title>Урок 3</title>
-    <link rel="stylesheet" href="../css/style.css">
-</head>
-<body>
 
-
-
-</form>
-</body>
-</html>
 

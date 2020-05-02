@@ -3,7 +3,9 @@
 
 <?php
 echo "<title>Урок 1</title>";
+
 // with while
+
 //$i = 1;
 //echo "<table border = \"1\">\n";
 //$firstNumber = 1;
@@ -30,6 +32,7 @@ echo "<title>Урок 1</title>";
 //}
 //
 //echo "</table>";
+
 //whith for
 
 echo "<link rel='stylesheet' href='../css/style.css'>";

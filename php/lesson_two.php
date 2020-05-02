@@ -15,7 +15,9 @@ for ($firstNumber = 1; $firstNumber <= 10; $firstNumber++) {
 
 
 //                temporary crutches
+
                 $test = " " . "X" . " ";
+                
                 if ($firstNumber == 1) {
                    echo "<span class = 'red'>$firstNumber</span>" . $test;
                 }

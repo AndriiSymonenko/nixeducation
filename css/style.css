@@ -69,7 +69,9 @@ ul {
 }
 
 .site-main {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
 
 .site-main__header {
@@ -100,6 +102,10 @@ ul {
 .social-icon__list {
     display: flex;
     justify-content: center;
+}
+
+.social-icon__list-item {
+    margin-right: 20px;
 }
 
 /* Lesson Three */
